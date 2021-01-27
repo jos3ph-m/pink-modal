@@ -14,8 +14,28 @@ body {
 
 h1 {
   font-family: 'Space Grotesk', sans-serif;
-  color: #d6b0b0;
+  color: #946a6a;
+  font-size: 3rem;
 }
+
+h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  color: #d6b0b0;
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  color: #cfb753;
+  font-size: 3rem;
+}
+
+h4 {
+  font-family: 'Space Grotesk', sans-serif;
+  color: #fcfcfc;
+  font-size: 2.5rem;
+}
+
 `;
 
 export default GlobalStyles;
