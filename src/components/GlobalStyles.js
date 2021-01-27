@@ -9,10 +9,12 @@ const GlobalStyles = createGlobalStyle`
 
 body {
   font-family: 'Space Grotesk', sans-serif;
+  background-color: #f2dcdc;
 }
 
 h1 {
   font-family: 'Space Grotesk', sans-serif;
+  color: #d6b0b0;
 }
 `;
 
