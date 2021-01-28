@@ -1,4 +1,6 @@
+// Styles
 import GlobalStyles from './components/GlobalStyles';
+import styled from 'styled-components';
 
 const Container = styled.div`
   display: flex;
@@ -12,7 +14,7 @@ const Button = styled.button`
   padding: 16px 32px;
   border-radius: 4px;
   border: none;
-  background-color: #946a6a;
+  background-color: #cfad1f;
   color: #fcfcfc;
   font-size: 2rem;
 `;
