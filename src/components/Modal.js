@@ -1,10 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export const Modal = () => {
-  return (
-    <>
-      <div>Modal</div>
-    </>
-  );
+export const Modal = ({ showModal, setShowModal }) => {
+  return <>{showModal ? <div>Modal</div> : null}</>;
 };
