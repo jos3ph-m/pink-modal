@@ -9,7 +9,7 @@ const GlobalStyles = createGlobalStyle`
 
 body {
   font-family: 'Space Grotesk', sans-serif;
-  background-color: #f2dcdc;
+  background-color: #fcfcfc;
 }
 
 h1 {
