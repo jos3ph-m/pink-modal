@@ -10,9 +10,13 @@ const Container = styled.div`
 `;
 
 const Button = styled.button`
+  font-family: 'Space Grotesk', sans-serif;
   min-width: 100px;
   padding: 16px 32px;
-  border-radius: 4px;
+  border-radius: 6px;
+  box-shadow: 1px 1px 20px 10px rgba(194, 157, 0, 0.3);
+  cursor: pointer;
+  outline: none;
   border: none;
   background-color: #c29d00;
   color: #fcfcfc;
