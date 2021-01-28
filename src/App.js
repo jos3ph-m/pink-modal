@@ -14,7 +14,7 @@ const Button = styled.button`
   padding: 16px 32px;
   border-radius: 4px;
   border: none;
-  background-color: #cfad1f;
+  background-color: #c29d00;
   color: #fcfcfc;
   font-size: 2rem;
 `;
@@ -24,7 +24,7 @@ function App() {
     <div className="App">
       <GlobalStyles />
       <Container>
-        <Button>Open the Pink Modal</Button>
+        <Button>Pink Modal</Button>
       </Container>
     </div>
   );
