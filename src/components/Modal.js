@@ -38,6 +38,17 @@ const ModalContent = styled.div`
   align-items: center;
   line-height: 1.8;
   color: #141414;
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  button {
+    padding: 10px 24px;
+    background: #141414;
+    color: #fff;
+    border: none;
+  }
 `;
 
 export const Modal = ({ showModal, setShowModal }) => {
