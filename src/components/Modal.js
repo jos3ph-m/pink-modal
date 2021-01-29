@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { MdClose } from 'react-icons/md';
-
+import modal from '../img/modal.jpg';
 
 const Background = styled.div`
   width: 100%;
@@ -28,7 +28,7 @@ const ModalWrapper = styled.div`
 
 const ModalImg = styled.img`
   width: 100%;
-  height: 100%;
+  height: 500px;
   border-radius: 10px 0 0 10px;
   background: #000;
 `;
@@ -67,21 +67,22 @@ const CloseModalButton = styled(MdClose)`
 export const Modal = ({ showModal, setShowModal }) => {
   return (
     <>
-      {showModal ?
-        (
-          <Background>
-            <ModalWrapper showModal={showModal}>
-              <ModalImg src={require('../img/modal.jpg')} alt='desert' />
-              <ModalContent>
-                <h1>Are you ready?</h1>
-                <p>Get exclusive access to our next launch</p>
-                <button>Join Now</button>
-              </ModalContent>
-              <CloseModalButton aria-label='Close modal' onClick={() => setShowModal(prev => !prev)} />
-            </ModalWrapper>
-          </Background>
-        )
-        }
+      {showModal ? (
+        <Background>
+          <ModalWrapper showModal={showModal}>
+            <ModalImg src={modal} alt="desert" />
+            <ModalContent>
+              <h1>Are you ready?</h1>
+              <p>Get exclusive access to our next launch</p>
+              <button>Join Now</button>
+            </ModalContent>
+            <CloseModalButton
+              aria-label="Close modal"
+              onClick={() => setShowModal((prev) => !prev)}
+            />
+          </ModalWrapper>
+        </Background>
+      ) : null}
     </>
-  ) 
+  );
 };
