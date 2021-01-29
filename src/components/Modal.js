@@ -31,7 +31,14 @@ const ModalImg = styled.img`
   background: #000;
 `;
 
-const ModalContent = styled.div``;
+const ModalContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.8;
+  color: #141414;
+`;
 
 export const Modal = ({ showModal, setShowModal }) => {
   return <>{showModal ? <div>Modal</div> : null}</>;
