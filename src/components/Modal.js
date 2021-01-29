@@ -24,6 +24,13 @@ const ModalWrapper = styled.div`
   border-radius: 10px;
 `;
 
+const ModalImg = styled.img`
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+  background: #000;
+`;
+
 export const Modal = ({ showModal, setShowModal }) => {
   return <>{showModal ? <div>Modal</div> : null}</>;
 };
