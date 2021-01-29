@@ -31,6 +31,8 @@ const ModalImg = styled.img`
   background: #000;
 `;
 
+const ModalContent = styled.div``;
+
 export const Modal = ({ showModal, setShowModal }) => {
   return <>{showModal ? <div>Modal</div> : null}</>;
 };
