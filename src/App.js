@@ -16,11 +16,11 @@ const Button = styled.button`
   min-width: 100px;
   padding: 16px 32px;
   border-radius: 6px;
-  box-shadow: 1px 1px 20px 10px rgba(194, 157, 0, 0.3);
+  box-shadow: 1px 1px 20px 10px rgba(198, 198, 198, 0.3);
   cursor: pointer;
   outline: none;
   border: none;
-  background-color: #c29d00;
+  background-color: #c6c6c6;
   color: #fcfcfc;
   font-size: 2rem;
 `;
