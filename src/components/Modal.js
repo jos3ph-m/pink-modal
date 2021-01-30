@@ -85,6 +85,7 @@ export const Modal = ({ showModal, setShowModal }) => {
     <>
       {showModal ? (
         <Background>
+          <animated.dv style={animation}>
           <ModalWrapper showModal={showModal}>
             <ModalImg src={modal} alt="desert" />
             <ModalContent>
@@ -97,6 +98,7 @@ export const Modal = ({ showModal, setShowModal }) => {
               onClick={() => setShowModal((prev) => !prev)}
             />
           </ModalWrapper>
+          </animated.dv>
         </Background>
       ) : null}
     </>
