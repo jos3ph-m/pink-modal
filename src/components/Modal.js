@@ -18,7 +18,7 @@ const ModalWrapper = styled.div`
   height: 500px;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
   background: #e3d0c9;
-  color: #c37b62;
+  color: #a7644f;
   display: grid;
   grid-template-columns: 1fr 1fr;
   position: relative;
@@ -39,7 +39,7 @@ const ModalContent = styled.div`
   justify-content: center;
   align-items: center;
   line-height: 1.8;
-  color: #c37b62;
+  color: #a7644f;
 
   h1 {
     margin-bottom: 0;
@@ -52,7 +52,7 @@ const ModalContent = styled.div`
 
   button {
     padding: 10px 24px;
-    background: #c37b62;
+    background: #a7644f;
     color: #fff;
     border: none;
   }
