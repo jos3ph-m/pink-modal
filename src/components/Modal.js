@@ -1,4 +1,5 @@
-import React from 'react';
+import React {useRef, useEffect, useCallback} from 'react';
+import { useSpring, animated } from 'react-spring';
 import styled from 'styled-components';
 import { MdClose } from 'react-icons/md';
 import modal from '../img/modal.jpg';
@@ -6,7 +7,7 @@ import modal from '../img/modal.jpg';
 const Background = styled.div`
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(79, 79, 79, 0.8);
   position: fixed;
   display: flex;
   justify-content: center;
@@ -70,6 +71,16 @@ const CloseModalButton = styled(MdClose)`
 `;
 
 export const Modal = ({ showModal, setShowModal }) => {
+  const modalRef = useRef()
+
+  const animation = useSpring({
+    config: {
+      duration: 250
+    },
+    opacity: showModal ? 1: 0,
+    transform: showModal ? `translateY(0%)`: `translateY(-100%)`
+  })
+
   return (
     <>
       {showModal ? (
